@@ -1,0 +1,2 @@
+def all(oper, nume, dura, cont, name, name2):
+    print('\n┌──────────────────────────────────────────┐\n  Costo por llamada de {} a {}\n   ► s/.{}0\n  Duración: {} minutos'.format(name, name2, round(oper.call(nume, dura, cont),1), dura),'\n└──────────────────────────────────────────┘\n')
