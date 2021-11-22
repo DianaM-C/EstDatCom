@@ -1,7 +1,6 @@
+from estructuras import Pila
 while True:
     try:
-        from estructuras import Pila
-
         contenedores1 = Pila.pila()
 
         print('\nIngrese la cantidad de contenedores que desea apilar')
@@ -26,7 +25,7 @@ while True:
 
         while True:
             retirar = int(input(' ► '))
-            if retirar <= cantidad:
+            if retirar > 0 and retirar <= cantidad:
                 break
             else:
                 print('\nPor favor ingrese un valor de entre 1 y {}'.format(cantidad))
